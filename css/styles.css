@@ -1,7 +1,7 @@
 @charset "utf-8";
 :root
 {
-    --basic-content-font: "PT Sans";
+    --basic-content-font: PT Sans, Helvetica, sans-serif;
     
     --basic-dark-gray: #293449;
     --basic-gray: #32425C;
@@ -40,7 +40,7 @@ body
 {
     margin: 0;
     padding: 0;
-    font-family: "Cuprum";
+    font-family: Cuprum, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: var(--basic-font-size);
@@ -1220,7 +1220,7 @@ br
     position: relative;
 }
 
-.tab-content.delivery:after
+.tab-content.delivery:after, .tab-content.warranty:after, .tab-content.credit:after
 {
     content: "";
     position: absolute;
@@ -2389,6 +2389,8 @@ br
     line-height: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border: none;
+    outline: none;
 }
 
 .range-value-split

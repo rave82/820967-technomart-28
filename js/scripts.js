@@ -84,7 +84,15 @@ function initRange()
 
                     snapValues = [range_container.querySelector('.range-value-start'), range_container.querySelector('.range-value-end')];
                     slider.noUiSlider.on('update', function (values, handle) {
-                        snapValues[handle].innerHTML = parseInt(values[handle]);
+                        //snapValues[handle].innerHTML = parseInt(values[handle]);
+                        snapValues[handle].value = parseInt(values[handle]);
+                    });
+                    
+                    snapValues[0].addEventListener('change', function () {
+                        slider.noUiSlider.set([this.value, null]);
+                    });
+                    snapValues[1].addEventListener('change', function () {
+                        slider.noUiSlider.set([null, this.value]);
                     });
                 }
             });

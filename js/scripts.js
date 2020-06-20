@@ -213,7 +213,119 @@ function setCurrentSlide(e, obj, choose_index)
     }
 }
 
+var POPUP_OPEN = false;
+var BODY = null;
 window.onload = function()
 {
     initRange();
+    
+    BODY = document.querySelector('body');
+    var popupBtnClose = document.querySelectorAll('.popup-element-close');
+    var popupBody = null;
+    popupBtnClose.forEach(function(item)
+    {
+        item.addEventListener('click', function(e)
+        {
+            closePopup(e, item);
+        });
+        
+        popupBody = item.closest('.popup-body');
+        popupBody.addEventListener('click', function(e)
+        {
+            if(e.target.classList.contains('popup-body'))
+            {
+                closePopup(e, e.target);
+            }
+        });
+    });
+    
+    window.addEventListener('keydown', function(e)
+    {
+        if(e.keyCode === 27)
+        {
+            if(POPUP_OPEN)
+            {
+                closePopupsOpen();
+            }
+        }
+    });
+}
+
+function closePopup(e, obj, unlock)
+{
+    if(e != undefined)
+    {
+        e.preventDefault();
+    }
+    
+    POPUP_OPEN = false;
+    var modal = obj.closest('div.popup');
+    if(modal != undefined)
+    {
+        modal.classList.remove('popup-active');
+    }
+    
+    if(unlock == undefined)
+    {
+        bodyUnLock();
+    }
+}
+
+function closePopupsOpen()
+{
+    bodyUnLock();
+    var is_open = false;
+    var popupOpen = document.querySelector('.popup.popup-active');
+    
+    if(popupOpen)
+    {
+        is_open = true;
+        closePopup(null, popupOpen, 1);
+    }
+    
+    return is_open;
+}
+
+function openPopup(modal)
+{
+    if(modal != undefined)
+    {
+        closePopupsOpen();
+        
+        POPUP_OPEN = true;
+        modal.classList.add('popup-active');
+        bodyLock();
+    }
+}
+
+function bodyLock()
+{
+    var lockPaddingValue = window.innerWidth - document.querySelector('.main').offsetWidth + 'px';
+    
+    BODY.style.paddingRight = lockPaddingValue;
+    BODY.classList.add('body-lock-scroll');
+}
+
+function bodyUnLock()
+{
+    BODY.style.paddingRight = null;
+    BODY.classList.remove('body-lock-scroll');
+}
+
+function addBasket(e, obj)
+{
+    e.preventDefault();
+    
+    var modal = document.getElementById('modal-item-add-cart');
+    
+    openPopup(modal);
+}
+
+function showPopupFeedback(e, obj)
+{
+    e.preventDefault();
+    
+    var modal = document.getElementById('modal-feedback');
+    
+    openPopup(modal);
 }

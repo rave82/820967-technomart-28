@@ -83,7 +83,7 @@
                 </div>
             </section>
         </header>
-        <main class="mt59">
+        <main class="main mt59">
             <div class="container">
                 <section class="section section-site-action">
                     <div class="row-site-action">
@@ -155,10 +155,10 @@
                         <div class="catalog-item">
                             <div class="wrap-img">
                                 <div class="wrap-goods-img">
-                                    <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000"/>
+                                    <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
                                 </div>
                                 <div class="wrap-btn">
-                                    <a href="#" class="btn add-basket">Купить</a>
+                                    <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
                                     <a href="#" class="btn add-fovarite">В закладки</a>
                                 </div>
                             </div>
@@ -176,10 +176,10 @@
                             <span class="new-item"></span>
                             <div class="wrap-img">
                                 <div class="wrap-goods-img">
-                                    <img src="img/prod_1.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000"/>
+                                    <img src="img/prod_1.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
                                 </div>
                                 <div class="wrap-btn">
-                                    <a href="#" class="btn add-basket">Купить</a>
+                                    <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
                                     <a href="#" class="btn add-fovarite">В закладки</a>
                                 </div>
                             </div>
@@ -196,10 +196,10 @@
                         <div class="catalog-item">
                             <div class="wrap-img">
                                 <div class="wrap-goods-img">
-                                    <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000"/>
+                                    <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
                                 </div>
                                 <div class="wrap-btn">
-                                    <a href="#" class="btn add-basket">Купить</a>
+                                    <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
                                     <a href="#" class="btn add-fovarite">В закладки</a>
                                 </div>
                             </div>
@@ -217,10 +217,10 @@
                             <span class="new-item"></span>
                             <div class="wrap-img">
                                 <div class="wrap-goods-img">
-                                    <img src="img/prod_1.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000"/>
+                                    <img src="img/slide1.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
                                 </div>
                                 <div class="wrap-btn">
-                                    <a href="#" class="btn add-basket">Купить</a>
+                                    <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
                                     <a href="#" class="btn add-fovarite">В закладки</a>
                                 </div>
                             </div>
@@ -229,6 +229,26 @@
                             </p>
                             <div class="wrap-price">
                                 <p class="old-price">32 500 Р.</p>
+                                <p class="line-price">
+                                    <span class="price">15 500 Р.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="wrap-img">
+                                <div class="wrap-goods-img">
+                                    <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
+                                </div>
+                                <div class="wrap-btn">
+                                    <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
+                                    <a href="#" class="btn add-fovarite">В закладки</a>
+                                </div>
+                            </div>
+                            <p class="line-goods-name">
+                                <a href="#" class="goods-name">Перфоратор BOSCH BFG 9000 Перфоратор BOSCH BFG 9000 Перфоратор BOSCH BFG 9000</a>
+                            </p>
+                            <div class="wrap-price">
+                                <p class="old-price"></p>
                                 <p class="line-price">
                                     <span class="price">15 500 Р.</span>
                                 </p>
@@ -243,28 +263,34 @@
                     </div>
                     <div class="list-top-vendor">
                         <a href="#" class="vendor-item" title="Производитель№1">
-                            <img src="img/vendor/ven_1.png" class="vendor-img" alt="ven_1"/>
+                            <img src="img/vendor/ven_1.png" class="vendor-img" alt="ven_1" width="220" height="145"/>
                         </a>
                         <a href="#" class="vendor-item" title="Производитель№2">
-                            <img src="img/vendor/ven_2.png" class="vendor-img" alt="ven_2"/>
+                            <img src="img/vendor/ven_2.png" class="vendor-img" alt="ven_2" width="220" height="145"/>
                         </a>
                         <a href="#" class="vendor-item" title="Производитель№3">
-                            <img src="img/vendor/ven_3.png" class="vendor-img" alt="ven_3"/>
+                            <img src="img/vendor/ven_3.png" class="vendor-img" alt="ven_3" width="220" height="145"/>
                         </a>
                         <a href="#" class="vendor-item" title="Производитель№4">
-                            <img src="img/vendor/ven_4.png" class="vendor-img" alt="ven_4"/>
+                            <img src="img/vendor/ven_4.png" class="vendor-img" alt="ven_4" width="220" height="145"/>
                         </a>
                         <a href="#" class="vendor-item" title="Производитель№5">
-                            <img src="img/vendor/ven_5.png" class="vendor-img" alt="ven_5"/>
+                            <img src="img/vendor/ven_5.png" class="vendor-img" alt="ven_5" width="220" height="145"/>
                         </a>
                         <a href="#" class="vendor-item" title="Производитель№6">
-                            <img src="img/vendor/ven_6.png" class="vendor-img" alt="ven_6"/>
+                            <img src="img/vendor/ven_6.png" class="vendor-img" alt="ven_6" width="220" height="145"/>
                         </a>
                         <a href="#" class="vendor-item" title="Производитель№7">
-                            <img src="img/vendor/ven_7.png" class="vendor-img" alt="ven_7"/>
+                            <img src="img/vendor/ven_7.png" class="vendor-img" alt="ven_7" width="220" height="145"/>
                         </a>
                         <a href="#" class="vendor-item" title="Производитель№8">
-                            <img src="img/vendor/ven_8.png" class="vendor-img" alt="ven_8"/>
+                            <img src="img/vendor/ven_8.png" class="vendor-img" alt="ven_8" width="220" height="145"/>
+                        </a>
+                        <a href="#" class="vendor-item" title="Производитель№9">
+                            <img src="img/slide1.png" class="vendor-img" alt="ven_9" width="220" height="145"/>
+                        </a>
+                        <a href="#" class="vendor-item" title="Производитель№10">
+                            <img src="img/vendor/ven_8.png" class="vendor-img" alt="ven_10" width="220" height="145"/>
                         </a>
                     </div>
                 </section>
@@ -329,10 +355,10 @@
                             <p>Вы можете забрать товар сами,</p>
                             <p>заехав в наш офис:</p>
                         </div>
-                        <div class="column-contacts-map">
-                            <img src="img/map.jpg" class="img-map" alt="карта проезда"/>
+                        <div class="column-contacts-map pointer" onclick="showPopupMap(event, this)">
+                            <img src="img/map.jpg" class="img-map" alt="карта проезда" width="300" height="158"/>
                         </div>
-                        <button type="button" class="btn bg-red btn-contacts-callback">Заблудились? Напишите нам!</button>
+                        <button type="button" class="btn bg-red btn-contacts-callback" onclick="showPopupFeedback(event, this)">Заблудились? Напишите нам!</button>
                     </div>
                 </section>
             </div>
@@ -395,29 +421,68 @@
             </section>
         </footer>
         
-        <div class="hidden">
-            <form action="https://echo.htmlacademy.ru" method="post">
-                <div>
-                    <p>
-                        <label for="name">Текст письма:</label>
-                        <input type="text" name="name" id="name" placeholder="Имя Фамилия" required=""/>
-                    </p>
-                    <p>
-                        <label for="email">Ваш e-mail:</label>
-                        <input type="email" name="email" id="email" placeholder="email@example" required=""/>
-                    </p>
+        <div class="popup popup-item-add-cart" id="modal-item-add-cart">
+            <div class="popup-body">
+                <div class="popup-content">
+                    <button type="button" class="btn popup-close popup-element-close" aria-label="Закрыть модальное окно"></button>
+                    <div class="popup-text">
+                        <div class="popup-text-title">
+                            <div class="popup-text-title-icon-mark">Товар добавлен в корзину</div>
+                        </div>
+                        <div class="popup-buttons">
+                            <a href="#" class="btn popup-btn popup-btn-checkout" aria-label="Перейти в корзину для оформления заказа">Оформить заказ</a>
+                            <button type="button" class="btn popup-btn popup-element-close popup-btn-continue" aria-label="Продолжить покупки">Продолжить покупки</button>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label for="message">Текст письма:</label>
-                    <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+            </div>
+        </div>
+        <div class="popup popup-feedback" id="modal-feedback">
+            <div class="popup-body">
+                <div class="popup-content">
+                    <button type="button" class="btn popup-close popup-element-close" aria-label="Закрыть форму обратной связи"></button>
+                    <div class="popup-text">
+                        <div class="wrap-form">
+                            <form action="https://echo.htmlacademy.ru" method="post">
+                                <div class="form-line-columns">
+                                    <div class="form-line-column">
+                                        <label for="name" class="form-input-title">Текст письма:</label>
+                                        <input type="text" class="input-text" name="name" id="name" placeholder="Имя Фамилия" required=""/>
+                                    </div>
+                                    <div class="form-line-column">
+                                        <label for="email" class="form-input-title">Ваш e-mail:</label>
+                                        <input type="email" class="input-email" name="email" id="email" placeholder="email@example" required=""/>
+                                    </div>
+                                </div>
+                                <div class="form-line">
+                                    <label for="message" class="form-input-title">Текст письма:</label>
+                                    <textarea name="message" class="textarea" id="message" placeholder="В свободной форме"></textarea>
+                                </div>
+                                <div class="form-line-buttons">
+                                    <button type="submit" class="btn btn-send" aria-label="форма обратной связи отправить сообщение">отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <button type="submit" aria-label="форма обратной связи отправить сообщение">отправить</button>
+            </div>
+        </div>
+        
+        <div class="popup popup-map" id="modal-map">
+            <div class="popup-body">
+                <div class="popup-content">
+                    <button type="button" class="btn popup-close popup-element-close" aria-label="Закрыть модальное окно"></button>
+                    <div class="popup-text">
+                        <div class="popup-map-container" id="map">
+                        </div>
+                    </div>
                 </div>
-            </form>
-            <button type="button" aria-label="Закрыть форму обратной связи"></button>
+            </div>
         </div>
         
         <script src="js/scripts.js"></script>
+        
+        <script src="https://api-maps.yandex.ru/2.1/?load=package.standard&lang=ru_RU" type="text/javascript"></script>
+        <script src="js/ya-map.js"></script>
     </body>
 </html>

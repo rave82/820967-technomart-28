@@ -7,7 +7,6 @@
         
         <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
         <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
-        <link href="css/nouislider.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
@@ -127,9 +126,13 @@
                                     </div>
                                     
                                     <div class="range-value">
-                                        <input type="number" class="range-value-start"/>
+                                        <label>
+                                            <input type="number" class="range-value-start"/>
+                                        </label>
                                         <span class="range-value-split">-</span>
-                                        <input type="number" class="range-value-end"/>
+                                        <label>
+                                            <input type="number" class="range-value-end"/>
+                                        </label>
                                         <!--span class="range-value-start"></span>
                                         <span class="range-value-split">-</span>
                                         <span class="range-value-end"></span-->
@@ -204,35 +207,15 @@
                                 <span class="new-item"></span>
                                 <div class="wrap-img">
                                     <div class="wrap-goods-img">
-                                        <img src="img/prod_1.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000"/>
+                                        <img src="img/prod_1.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
                                     </div>
                                     <div class="wrap-btn">
-                                        <a href="#" class="btn add-basket">Купить</a>
+                                        <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
                                         <a href="#" class="btn add-fovarite">В закладки</a>
                                     </div>
                                 </div>
                                 <p class="line-goods-name">
-                                    <a href="#" class="goods-name">Перфоратор BOSCH BFG 9000</a>
-                                </p>
-                                <div class="wrap-price">
-                                    <p class="old-price">32 500 Р.</p>
-                                    <p class="line-price">
-                                        <span class="price">15 500 Р.</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="catalog-item">
-                                <div class="wrap-img">
-                                    <div class="wrap-goods-img">
-                                        <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000"/>
-                                    </div>
-                                    <div class="wrap-btn">
-                                        <a href="#" class="btn add-basket">Купить</a>
-                                        <a href="#" class="btn add-fovarite">В закладки</a>
-                                    </div>
-                                </div>
-                                <p class="line-goods-name">
-                                    <a href="#" class="goods-name">Перфоратор BOSCH BFG 9000</a>
+                                    <a href="#" class="goods-name">Перфоратор BOSCH BFG 9000 Перфоратор BOSCH BFG 9000</a>
                                 </p>
                                 <div class="wrap-price">
                                     <p class="old-price"></p>
@@ -244,10 +227,30 @@
                             <div class="catalog-item">
                                 <div class="wrap-img">
                                     <div class="wrap-goods-img">
-                                        <img src="img/prod_2.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000"/>
+                                        <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
                                     </div>
                                     <div class="wrap-btn">
-                                        <a href="#" class="btn add-basket">Купить</a>
+                                        <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
+                                        <a href="#" class="btn add-fovarite">В закладки</a>
+                                    </div>
+                                </div>
+                                <p class="line-goods-name">
+                                    <a href="#" class="goods-name">Перфоратор BOSCH BFG 9000 Перфоратор BOSCH BFG 9000 Перфоратор BOSCH BFG 9000</a>
+                                </p>
+                                <div class="wrap-price">
+                                    <p class="old-price">32 500 Р.</p>
+                                    <p class="line-price">
+                                        <span class="price">15 500 Р.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="catalog-item">
+                                <div class="wrap-img">
+                                    <div class="wrap-goods-img">
+                                        <img src="img/prod_2.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
+                                    </div>
+                                    <div class="wrap-btn">
+                                        <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
                                         <a href="#" class="btn add-fovarite">В закладки</a>
                                     </div>
                                 </div>
@@ -264,10 +267,10 @@
                             <div class="catalog-item">
                                 <div class="wrap-img">
                                     <div class="wrap-goods-img">
-                                        <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000"/>
+                                        <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
                                     </div>
                                     <div class="wrap-btn">
-                                        <a href="#" class="btn add-basket">Купить</a>
+                                        <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
                                         <a href="#" class="btn add-fovarite">В закладки</a>
                                     </div>
                                 </div>
@@ -284,10 +287,10 @@
                             <div class="catalog-item">
                                 <div class="wrap-img">
                                     <div class="wrap-goods-img">
-                                        <img src="img/prod_2.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000"/>
+                                        <img src="img/prod_2.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
                                     </div>
                                     <div class="wrap-btn">
-                                        <a href="#" class="btn add-basket">Купить</a>
+                                        <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
                                         <a href="#" class="btn add-fovarite">В закладки</a>
                                     </div>
                                 </div>
@@ -304,10 +307,10 @@
                             <div class="catalog-item">
                                 <div class="wrap-img">
                                     <div class="wrap-goods-img">
-                                        <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000"/>
+                                        <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
                                     </div>
                                     <div class="wrap-btn">
-                                        <a href="#" class="btn add-basket">Купить</a>
+                                        <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
                                         <a href="#" class="btn add-fovarite">В закладки</a>
                                     </div>
                                 </div>
@@ -324,10 +327,10 @@
                             <div class="catalog-item">
                                 <div class="wrap-img">
                                     <div class="wrap-goods-img">
-                                        <img src="img/prod_2.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000"/>
+                                        <img src="img/prod_2.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
                                     </div>
                                     <div class="wrap-btn">
-                                        <a href="#" class="btn add-basket">Купить</a>
+                                        <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
                                         <a href="#" class="btn add-fovarite">В закладки</a>
                                     </div>
                                 </div>
@@ -336,6 +339,26 @@
                                 </p>
                                 <div class="wrap-price">
                                     <p class="old-price">32 500 Р.</p>
+                                    <p class="line-price">
+                                        <span class="price">15 500 Р.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="catalog-item">
+                                <div class="wrap-img">
+                                    <div class="wrap-goods-img">
+                                        <img src="img/prod_3.png" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="144" height="128"/>
+                                    </div>
+                                    <div class="wrap-btn">
+                                        <a href="#" class="btn add-basket" onclick="addBasket(event, this)">Купить</a>
+                                        <a href="#" class="btn add-fovarite">В закладки</a>
+                                    </div>
+                                </div>
+                                <p class="line-goods-name">
+                                    <a href="#" class="goods-name">Перфоратор BOSCH BFG 9000 Перфоратор BOSCH BFG 9000 Перфоратор BOSCH BFG 9000</a>
+                                </p>
+                                <div class="wrap-price">
+                                    <p class="old-price"></p>
                                     <p class="line-price">
                                         <span class="price">15 500 Р.</span>
                                     </p>
@@ -421,18 +444,21 @@
             </section>
         </footer>
         
-        <div class="hidden">
-            <div>
-                <div>
-                    <span></span>
-                    <span>Товар добавлен в корзину</span>
-                </div>
-                <div>
-                    <a href="#" aria-label="Перейти в корзину для оформления заказа">Оформить заказ</a>
-                    <button type="submit" aria-label="Продолжить покупки">Продолжить покупки</button>
+        <div class="popup popup-item-add-cart" id="modal-item-add-cart">
+            <div class="popup-body">
+                <div class="popup-content">
+                    <button type="button" class="btn popup-close popup-element-close" aria-label="Закрыть модальное окно"></button>
+                    <div class="popup-text">
+                        <div class="popup-text-title">
+                            <div class="popup-text-title-icon-mark">Товар добавлен в корзину</div>
+                        </div>
+                        <div class="popup-buttons">
+                            <a href="#" class="btn popup-btn popup-btn-checkout" aria-label="Перейти в корзину для оформления заказа">Оформить заказ</a>
+                            <button type="button" class="btn popup-btn popup-element-close popup-btn-continue" aria-label="Продолжить покупки">Продолжить покупки</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button type="button" aria-label="Закрыть модальное окно"></button>
         </div>
         
         <script src="js/nouislider.min.js"></script>

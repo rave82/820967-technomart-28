@@ -21,6 +21,8 @@
     --special-yellowlight: #FFD180;
     
     --basic-popup-transition: all 0.8s ease 0s;
+    
+    --basci-white-rgba: rgba(0, 0, 0, 0.0001);
 }
 
 *
@@ -79,9 +81,10 @@ button::-moz-focus-inner
     margin: 0;
 }
 
-main
+.main
 {
     font-family: inherit;
+    background-color: #F2F6F8;
 }
 
 .section
@@ -143,12 +146,25 @@ br
     height: 21px;
 }
 
+.br
+{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+}
+
 .mt59
 {
     margin-top: 59px;
 }
 
 /* ************************ */
+.page-title
+{
+    color: var(--basic-gray);
+}
+
 .wrap-columns, .container
 {
     width: 940px;
@@ -158,6 +174,7 @@ br
 .main-header
 {
     height: 320px;
+    background-color: var(--basci-white-rgba);
 }
 
 .footer
@@ -478,6 +495,9 @@ br
     height: 45px;
     line-height: 45px;
     text-align: right;
+    
+    background: #F3F7F9;
+    border: 3px solid #FFFFFF;
 }
 
 .header-column-contacts .phone
@@ -544,6 +564,7 @@ br
     font-size: 21px;
     line-height: 21px;
     position: relative;
+    background-color: var(--basci-white-rgba);
 }
 
 .header-column-auth .auth:hover, .header-column-auth .registration:hover
@@ -590,6 +611,7 @@ br
     padding-top: 12px;
     padding-right: 24px;
     padding-bottom: 12px;
+    background-color: var(--basci-white-rgba);
 }
 
 .header-column-auth.user-auth
@@ -619,6 +641,7 @@ br
     min-width: 50px;
     margin-top: 12px;
     margin-bottom: 12px;
+    background-color: var(--basci-white-rgba);
 }
 
 .nav-user-auth .link-edit-profile:before
@@ -704,7 +727,7 @@ br
 {
     content: "";
     position: absolute;
-    background-color: var(--basic-gray);
+    background: linear-gradient(0deg, #32425C, #32425C), #FFFFFF;
     width: 5px;
     height: 5px;
     margin-left: -15px;
@@ -2467,6 +2490,11 @@ br
     top: 50%;
 }
 
+.filter-range .noUi-target
+{
+    background: #D7DCDE;
+}
+
 .noUi-handle
 {
     outline: none;
@@ -2510,7 +2538,8 @@ br
 
 .filter-range .noUi-connect
 {
-    background: #5FBB2D;
+    background: #8ED78F;
+    /*background: url('../img/range-bg-line.svg');*/
 }
 
 

@@ -40,7 +40,6 @@ function filterCheckedParam(e, obj)
         {
             rbtn.classList.remove('checked');
         }
-        
         obj.classList.add('checked');
     }
     else

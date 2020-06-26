@@ -1358,12 +1358,16 @@ br
     margin-left: 23px;
     background-color: transparent;
     opacity: 0.3;
+    border: 1px solid var(--basic-white);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 23px;
     padding-right: 24px;
-    border: 1px solid var(--basic-white);
     display: inline-block;
+    
+    /*background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.3;*/
 }
 
 .action-item-btn:hover
@@ -1378,7 +1382,8 @@ br
 
 .action-item-1
 {
-    background-image: url('../img/bg_icon_1.png');
+    /*background-image: url('../img/bg_icon_1.png');*/
+    background-color: #FFBF47;
     position: relative;
 }
 
@@ -1398,7 +1403,8 @@ br
 
 .action-item-2
 {
-    background-image: url('../img/bg_icon_2.png');
+    /*background-image: url('../img/bg_icon_2.png');*/
+    background-color: #3BBCE3;
     position: relative;
 }
 
@@ -1418,7 +1424,8 @@ br
 
 .action-item-3
 {
-    background-image: url('../img/bg_icon_3.png');
+    /*background-image: url('../img/bg_icon_3.png');*/
+    background-color: #DC91D8;
     position: relative;
 }
 
@@ -1438,7 +1445,8 @@ br
 
 .action-item-4
 {
-    background-image: url('../img/bg_icon_4.png');
+    /*background-image: url('../img/bg_icon_4.png');*/
+    background-color: #8ED78F;
     position: relative;
 }
 
@@ -1458,7 +1466,8 @@ br
 
 .action-item-5
 {
-    background-image: url('../img/bg_icon_5.png');
+    /*background-image: url('../img/bg_icon_5.png');*/
+    background-color: #FFC047;
     position: relative;
 }
 
